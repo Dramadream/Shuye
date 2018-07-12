@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="3dp"
+    android:paddingRight="3dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="2dp">
+
+        <TextView
+            android:id="@+id/time"
+            style="@style/item"
+            android:layout_weight="3"
+            tools:text="04:68"/>
+
+        <TextView
+            android:id="@+id/type"
+            style="@style/item"
+            android:layout_weight="3"
+            tools:text="喂奶"/>
+
+        <TextView
+            android:id="@+id/account"
+            style="@style/item"
+            android:layout_weight="5"
+            android:text="60ml"/>
+
+        <TextView
+            android:id="@+id/paper_diaper"
+            style="@style/item"
+            android:layout_weight="1"
+            android:text="换"
+            />
+
+        <TextView
+            android:id="@+id/shit"
+            style="@style/item"
+            android:layout_weight="1"
+            android:text="拉"
+            android:textColor="#870b0b"
+            android:textStyle="bold"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/empty"
+            style="@style/item"
+            android:layout_weight="1"
+            android:text="  "
+            android:visibility="gone"
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_gravity="bottom"
+        android:background="@color/color3"/>
+</FrameLayout>

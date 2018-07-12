@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="kiven.com.shuye.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <TextView
+        android:id="@+id/tv_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="6dp"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="2017-02-22"/>
+
+    <TextView
+        android:id="@+id/tv_birthday_between"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@id/tv_data"
+        app:layout_constraintLeft_toRightOf="@id/tv_data"
+        tools:text="1个月23天"/>
+
+    <Button
+        android:id="@+id/btn_pre_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/transpant"
+        android:text="@string/pre_day"
+        app:layout_constraintBottom_toBottomOf="@id/tv_data"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_data"
+        />
+
+    <Button
+        android:id="@+id/btn_next_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/transpant"
+        android:text="@string/next_day"
+        app:layout_constraintBottom_toBottomOf="@id/tv_data"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_data"
+        />
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/srl_main"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/tv_total_milk"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_data">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+    <TextView
+        android:id="@+id/tv_total_milk"
+        style="@style/tv_total"
+        android:layout_height="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/srl_main"
+        tools:text="奶：540 ml"/>
+
+    <TextView
+        android:id="@+id/tv_total_water"
+        style="@style/tv_total"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/tv_total_milk"
+        app:layout_constraintTop_toBottomOf="@id/srl_main"
+        tools:text="水：90 ml"
+        />
+
+    <TextView
+        android:id="@+id/tv_paper_times"
+        style="@style/tv_total"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/tv_total_water"
+        app:layout_constraintTop_toBottomOf="@id/srl_main"
+        tools:text="换：7 次"
+        />
+</android.support.constraint.ConstraintLayout>

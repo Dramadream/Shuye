@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">方舒也</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">设置</string>
+
+    <string name="email">f842728368@163.com</string>
+
+    <string name="milk">奶</string>
+    <string name="water">水</string>
+    <string name="supplement_food">辅食</string>
+    <string name="confirm">确定</string>
+    <string name="cancel">取消</string>
+    <string name="today">今天</string>
+    <string name="pick_date">日期</string>
+    <string name="warning">警告</string>
+    <string name="pre_day">前一天</string>
+    <string name="next_day">后一天</string>
+    <string name="shit_or_paper_diaper">—</string>
+
+    <string name="growing">成长</string>
+    <string name="red_paper">红包</string>
+    <string name="statistics">统计</string>
+    <string name="about_me">关于我</string>
+
+    <string name="account">%d ml</string>
+    <string name="total_milk">奶:%d ml</string>
+    <string name="total_water">水: %d ml</string>
+    <string name="total_paper">换: %d 次</string>
+
+    <string name="dialog_delete_warning_msg">是否要删除 s% 时间的记录？</string>
+    <string name="toast_delete_msg">你删除了 s% 时间的纪录。</string>
+    <string name="toast_empty_account">舒也什么都没喝吗？</string>
+    <string name="save_no_current_day">不是当天的记录，确定要添加或修改吗？</string>
+
+</resources>
